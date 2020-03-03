@@ -22,45 +22,45 @@ Selenium Webdriver
 
 распаковать архив и переместите драйвер в папку /usr/local/bin:
   
-  unzip {название файла}
+  1. unzip {название файла}
   
-  sudo mv chromedriver /usr/local/bin/chromedriver
+  2. sudo mv chromedriver /usr/local/bin/chromedriver
   
-  sudo chown root:root /usr/local/bin/chromedriver
+  3. sudo chown root:root /usr/local/bin/chromedriver
   
-  sudo chmod +x /usr/local/bin/chromedriver
+  4. sudo chmod +x /usr/local/bin/chromedriver
 
 
 
 Клонирование репозитория
 
-  в терминале необходимо перейти в папку, куда планируется скачивать проект
+  1. в терминале необходимо перейти в папку, куда планируется скачивать проект
   
-  склонировать репозиторий командой: git clone https://github.com/vls2693/csssr_test.git
+  2. склонировать репозиторий командой: git clone https://github.com/vls2693/csssr_test.git
   
 Подготовка рабочего окружения
 
-открыть терминал
+1. открыть терминал
 
-перейти в папку с проектом
+2. перейти в папку с проектом
 
-ввести следующие команды:
+3. ввести следующие команды:
 
-  python3 -m venv test_rpt_env
+  3.1 python3 -m venv test_rpt_env
 
-  source test_rpt_env/bin/activate
+  3.2 source test_rpt_env/bin/activate
   
-  pip install -r requirements.txt
+  3.3 pip install -r requirements.txt
 
-закрыть терминал
+4. закрыть терминал
 
 
 Запуск тестов (из терминала)
 
-открыть терминал
+1. открыть терминал
 
-перейти в папку проекта
+2. перейти в папку проекта
 
-активировать рабочее окружение командой: source test_rpt_env/bin/activate
+3. активировать рабочее окружение командой: source test_rpt_env/bin/activate
 
-запустить тест: pytest tests/tst_page.py
+4. запустить тест: pytest tests/tst_page.py
